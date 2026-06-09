@@ -1,10 +1,13 @@
-<!DOCTYPE html>    <!--@nicolas Pode mudar a paleta do cores, só coloquei pra estruturar. n sou bom com cores =( -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nirvana </title>
         <link rel="icon" href="imagens/favicon.png" size="16x16" type="image/png">
+        <!--O CSS esta dentro da tag <style> no head que deixa o codigo mais organizado e melhor para manutenção-->
+        <!--O CSS está modificando apenas coisas basicas como cor, estrutura de texto, tamanho e alinhamento-->
+        <!--As cores foram escolidas a dedo para combinar com a estetica da banda Nirvana, com tons de amaralo e um fundo cinza para dar destaque aos textos-->
         <style>
             td {
                 width: 20%;
@@ -40,16 +43,22 @@
             }
             </style>
         </head>
-        <body>    <!--Pode add + paginas se vc achar mlhr-->
+        <body>
+            <!--A linha de cima que mostra os caminhos simplificados pelo atributo <a>, ja estilizada pelo <style> no head, dando a cor amarela-->
             Inicio |  
             <a href="membros.html">Membros</a> | <a href="iframe.html">Museu</a> |
             <a href="albunsmusicas.html">Albuns</a> | 
             <a href="musics.html">Musicas</a> |
             <a href="formulario.html">Creditos</a> |
+            
             <hr> 
 
+            <!--Titulo base de inicio separado por duas linhas <hr>, o tamanho do titulo esta definido no CSS e a cor também um amarelo para dar destaque aos textos-->
             <h1> Nirvana </h1>
+            
             <hr>
+
+            <!--A organização de texto está de maneira diferente, utilizando tabelas para a organização dentro do site, mas o principal que deixa o texto mais organizado por causa do css, com font-aling justify e center, além do vertical aling top que alinha os texto verticalmente-->
             <table>
                 <tr>
                     <td>
@@ -73,7 +82,7 @@
                         </p>
                     </td>
                 </tr>
-                <tr></tr>
+                <!--Linha com imagem e informações sobre a banda utilizando um css basico e que não é utilizado sempre no metodo inline, mesmo não sendo o mais recomendado como é algo isolado pode ser mais eficiente-->
                 <tr>
                     <td style="text-align: center;">
                         <img src="imagens/nirvana.png">
@@ -99,6 +108,7 @@
             <br>
             <table>
                 <tr>
+                    <!--A imagem do canal do Nirvana manda diretamente por meio de um <a> para o canal no YouTube do Nirvana-->
                     <td style="text-align: center;">
                         <a href="https://www.youtube.com/user/Nirvana" target="_blank"><img src="imagens/youtube.jpg" alt="Canal do Nirvana no YouTube" height="auto%" width="700px"></a>
                     </td>
@@ -118,6 +128,6 @@
                     <td><legend>clique na imagem para entrar no canal do youtube</legend></td>
                 </tr>
             </table>
-            <hr>,
+            <hr>
         </body>
     </html>

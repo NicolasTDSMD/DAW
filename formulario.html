@@ -6,10 +6,6 @@
         <title>Nirvana </title>
         <link rel="icon" href="imagens/favicon.png" size="16x16" type="image/png">
         <style>
-            td {
-                width: 20%;
-                vertical-align: top;
-            }
             p {
                 text-align: justify;
                 color: #e0e0cc;
@@ -76,61 +72,74 @@
             <h1> FeedBack </h1>
             <hr>
 
-            <p>Deixe seu feedback sobre o site, sugestões, críticas, elogios, o que quiser! Queremos ouvir a opinião de vocês para melhorar cada vez mais nosso site e trazer mais conteúdo sobre a banda que amamos. Fique a vontade para mandar quantos feedbacks você quiser! Nossa equipe agradece!</p>
+            <p>Deixe seu feedback sobre o site, sugestões, críticas, elogios, o que quiser! Queremos ouvir a opinião de vocês para melhorar cada vez mais nosso site e trazer mais conteúdo sobre a banda que amamos. Fique à vontade para mandar quantos feedbacks você quiser! Nossa equipe agradece!
+            Além disso, estamos sempre em busca de novas ideias e propostas que possam enriquecer a experiência dos fãs. Se você tem alguma sugestão de conteúdo, como entrevistas, análises de álbuns ou até mesmo eventos que gostaria de ver, não hesite em compartilhar. Sua participação é fundamental para que possamos criar um espaço que realmente represente a paixão que todos temos pela música e pela banda Nirvana.
+            Estamos ansiosos para ler suas mensagens e, quem sabe, implementar algumas das suas ideias em nosso site. Agradecemos por fazer parte dessa jornada conosco e por contribuir para a construção de uma comunidade mais forte e unida em torno da música que amamos!</p>
+            <table>
+            <!-- Formulário de feedback, foi colocado os 5 campos diferentes, uma das maiores dificuldades foi achar um contexto bom para fazer um formulario dentro deste projeto-->
+                <tr>
+                    <td>
+                        <form>
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" id="nome" name="nome" required><br><br>
 
-            <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br><br>
+                            <label for="idade">Idade:</label><br>
+                            <input type="number" id="idade" name="idade" min="0" max="100"><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email">
-                <br><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required>
+                            <br><br>
 
-                Qual sua musica favorita? <br>
-                <select id="musica" name="musica">
-                    <option value="">-- Selecione uma música --</option>
-                    <option value="Smells Like Teen Spirit">Smells Like Teen Spirit</option>
-                    <option value="Come As You Are">Come As You Are</option>
-                    <option value="Lithium">Lithium</option>
-                    <option value="In Bloom">In Bloom</option>
-                    <option value="Heart-Shaped Box">Heart-Shaped Box</option>
-                    <option value="All Apologies">All Apologies</option>
-                    <option value="About A Girl">About A Girl</option>
-                    <option value="Rape Me">Rape Me</option>
-                    <option value="Pennyroyal Tea">Pennyroyal Tea</option>
-                    <option value="Dumb">Dumb</option>
-                    <option value="Very Ape">Very Ape</option>
-                    <option value="Blew">Blew</option>
-                    <option value="Negative Creep">Negative Creep</option>
-                    <option value="School">School</option>
-                    <option value="Polly">Polly</option>
-                    <option value="Drain You">Drain You</option>
-                    <option value="nenhuma">Nenhuma</option>
-                    <option value="outra">Outra</option>
-                </select><br><br>
+                                Qual sua musica favorita? <br>
+                                <select id="musica" name="musica">
+                                    <option value="">-- Selecione uma música --</option>
+                                    <option value="Smells Like Teen Spirit">Smells Like Teen Spirit</option>
+                                    <option value="Come As You Are">Come As You Are</option>
+                                    <option value="Lithium">Lithium</option>
+                                    <option value="In Bloom">In Bloom</option>
+                                    <option value="Heart-Shaped Box">Heart-Shaped Box</option>
+                                    <option value="All Apologies">All Apologies</option>
+                                    <option value="About A Girl">About A Girl</option>
+                                    <option value="Rape Me">Rape Me</option>
+                                    <option value="Pennyroyal Tea">Pennyroyal Tea</option>
+                                    <option value="Dumb">Dumb</option>
+                                    <option value="Very Ape">Very Ape</option>
+                                    <option value="Blew">Blew</option>
+                                    <option value="Negative Creep">Negative Creep</option>
+                                    <option value="School">School</option>
+                                    <option value="Polly">Polly</option>
+                                    <option value="Drain You">Drain You</option>
+                                    <option value="nenhuma">Nenhuma</option>
+                                    <option value="outra">Outra</option>
+                                </select><br><br>
 
-                <label for="data">Data:</label><br>
-                <input type="date" id="data" name="data"><br><br>
+                                <label for="Nota">Nota de 0 a 10 para o Site:</label><br>
+                                0<input type="range" id="Nota" name="Nota" min="0" max="10">10<br><br>
 
-                <label for="Nota">Nota:</label><br>
-                0<input type="range" id="Nota" name="Nota" min="0" max="10">10<br><br>
+                                <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="Deixe sua sugestão sobre o site aqui..."></textarea><br><br>
 
-                <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="Deixe sua sugestão aqui..."></textarea><br><br>
+                                <label for="receber">Quer receber novidades sobre a banda?</label><br><br>
+                                <input type="checkbox" id="receber" name="receber"> sim quero receber <br><br>
 
-                <label for="receber">Quero receber novidades sobre a banda!</label><br><br>
-                <input type="checkbox" id="receber" name="receber"> sim quero receber <br><br>
-
-                <input style="color: #000000; background-color: #dfb90da9" type="submit" value="Enviar">  
-            </form>
+                                <input style="color: #000000; background-color: #dfb90da9" type="submit" value="Enviar">  
+                            </form>        
+                        </td>
+                        <hr>
+                        <td align="right" style="width: 25%;">
+                            <img src="imagens/feedback.png" alt="Imagem de feedback" style="max-width: 100%; height: auto;">
+                        </td>
+                    </tr>
+                </form>
+            </table>
             <hr>
             <p>
-                Obrigado por visitar nosso site e deixar seu feedback! A opinião de vocês émuito importante para nós e nos ajuda a melhorar cada vez mais. Continuem acompanhando nosso site para mais novidades sobre a banda Nirvana!</p>
+                Obrigado por visitar nosso site e deixar seu feedback! A opinião de vocês é muito importante para nós e nos ajuda a melhorar cada vez mais. Continuem acompanhando nosso site para mais novidades sobre a banda Nirvana!</p>
 
                 <p>Equipe Nirvana 1°TDSMD</p>
-                <ul>
-                    <li>Nicolas Rafael Grigol Teixeira Pinto</li>
-                    <li>Artur Elias Mariote Bohn Mengon</li>
-                </ul>
-                
+                    <ul>
+                        <li>Nicolas Rafael Grigol Teixeira Pinto</li>
+                        <li>Artur Elias Mariote Bohn Mengon</li>
+                    </ul>
+                <hr>
         </body>
 </html>
